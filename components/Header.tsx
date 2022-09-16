@@ -8,17 +8,30 @@ import Hero from './Hero';
 function Header() {
   return (
     <div className=" py-8 px-4 text-white font-ubuntu">
-      <div className="flex justify-between items-center py-8 sm:py-0">
+      <div className="flex gap-12 justify-between sm:justify-end items-center py-8 sm:py-0">
         <div>
           <Image src="/logo.svg" alt="logo" width={90} height={35} />
         </div>
-        <div className="hidden gap-6 sm:flex">
+        <div className="hidden gap-6 sm:flex sm:flex-grow">
           <Headerlink link="Product" />
           <Headerlink link="Company" />
           <Headerlink link="Connect" />
         </div>
         <div>
-          <Image src="/icon-hamburger.svg" alt="logo" width={30} height={15} />
+          <span className="sm:hidden">
+            <Image
+              src="/icon-hamburger.svg"
+              alt="logo"
+              width={30}
+              height={15}
+            />
+          </span>
+          <button className="hidden sm:inline-block btn bg-opacity-0 text-white ml-2  ">
+            Login
+          </button>
+          <button className="hidden sm:inline-block btn bg-opacity-0 text-white">
+            Sign Up
+          </button>
         </div>
       </div>
       <Hero />

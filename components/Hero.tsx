@@ -9,7 +9,7 @@ function Hero() {
       <p>Grow your audience and build your online brand</p>
       <div className="flex gap-2 justify-center py-8">
         <button className="btn">Start For Free</button>
-        <button className="btn bg-opacity-0 text-white border">
+        <button className="btn bg-opacity-0 text-white border hover:bg-white hover:text-Primary-light">
           Learn More
         </button>
       </div>
