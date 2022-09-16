@@ -1,9 +1,16 @@
+import Image from 'next/image';
+import img1 from '../public/illustration-editor-mobile.svg';
 import React from 'react';
 
 function PartOne() {
   return (
-    <div className="my-12 grid grid-cols-2 bg-[url('/illustration-editor-desktop.svg')] bg-[length:70%] bg-right-top bg-no-repeat">
-      <h1 className="title col-span-2">Designed for the future</h1>
+    <div className="my-12 py-4 sm:grid sm:grid-cols-2 sm:bg-[url('/illustration-editor-desktop.svg')] bg-[length:70%] bg-[right_-180px_top] bg-no-repeat">
+      <h1 className="title col-span-2 sm:text-center">
+        Designed for the future
+      </h1>
+      <div className="sm:hidden sm:row-span-2 flex justify-center ">
+        <Image src={img1} alt="img" />
+      </div>
       <div>
         <h1 className="title">Itroduction an extensible editor</h1>
         <p className="paragraph">
@@ -21,7 +28,7 @@ function PartOne() {
           you&apos;re in full control.
         </p>
       </div>
-      <div className="row-span-2"></div>
+      <div className="row-span-2 "></div>
     </div>
   );
 }

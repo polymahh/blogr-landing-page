@@ -10,11 +10,11 @@
 }
 
 .title {
-  @apply text-center text-2xl text-Neutral-darkGrayishBlue py-8 px-10 font-semibold;
+  @apply text-center text-2xl text-Neutral-darkGrayishBlue sm:text-left py-8 px-10 font-semibold;
 }
 
 .paragraph {
-  @apply text-Neutral-darkGrayishBlue text-center px-8;
+  @apply text-Neutral-darkGrayishBlue text-center sm:text-left px-8;
 }
 
 .footerList {
