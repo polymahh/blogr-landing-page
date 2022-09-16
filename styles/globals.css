@@ -8,4 +8,24 @@
 .btn {
   @apply font-Overpass py-2 px-4 rounded-full bg-white text-Primary-light cursor-pointer text-sm font-semibold;
 }
+
+.title {
+  @apply text-center text-2xl text-Neutral-darkGrayishBlue py-8 px-10 font-semibold;
+}
+
+.paragraph {
+  @apply text-Neutral-darkGrayishBlue text-center px-8;
+}
+
+.footerList {
+  @apply text-white flex flex-col gap-1 text-center sm:text-left;
+}
+
+.footerList > span {
+  @apply text-neutral-400;
+}
+
+.footerH {
+  @apply font-semibold my-4;
+}
 @tailwind utilities;
