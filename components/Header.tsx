@@ -7,7 +7,7 @@ import Hero from './Hero';
 
 function Header() {
   return (
-    <div className=" py-8 px-4 text-white font-ubuntu">
+    <div className=" py-8 px-4 text-white font-ubuntu maxw">
       <div className="flex gap-12 justify-between sm:justify-end items-center py-8 sm:py-0">
         <div>
           <Image src="/logo.svg" alt="logo" width={90} height={35} />
@@ -26,10 +26,10 @@ function Header() {
               height={15}
             />
           </span>
-          <button className="hidden sm:inline-block btn bg-opacity-0 text-white ml-2  ">
+          <button className="hidden sm:inline-block btn bg-opacity-0 text-white mr-2  ">
             Login
           </button>
-          <button className="hidden sm:inline-block btn bg-opacity-0 text-white">
+          <button className="hidden sm:inline-block btn  text-Primary-light">
             Sign Up
           </button>
         </div>

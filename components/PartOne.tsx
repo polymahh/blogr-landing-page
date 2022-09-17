@@ -4,7 +4,7 @@ import React from 'react';
 
 function PartOne() {
   return (
-    <div className="my-12 py-4 sm:grid sm:grid-cols-2 sm:bg-[url('/illustration-editor-desktop.svg')] bg-[length:70%] bg-[right_-180px_top] bg-no-repeat">
+    <div className="partOne mt-12 pt-4 pb-[32vh] sm:pb-14 sm:grid sm:grid-cols-2  relative bg-opacity-0 maxw  ">
       <h1 className="title col-span-2 sm:text-center">
         Designed for the future
       </h1>

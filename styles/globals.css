@@ -6,15 +6,15 @@
 @tailwind components;
 
 .btn {
-  @apply font-Overpass py-2 px-4 rounded-full bg-white text-Primary-light cursor-pointer text-sm font-semibold hover:bg-Primary-veryLight hover:text-white;
+  @apply font-ubuntu py-2 px-4 rounded-full bg-white text-Primary-light cursor-pointer text-sm font-semibold hover:bg-Primary-veryLight hover:text-white;
 }
 
 .title {
-  @apply text-center text-2xl text-Neutral-darkGrayishBlue sm:text-left py-8 px-10 font-semibold;
+  @apply text-center text-2xl text-Neutral-darkGrayishBlue sm:text-left py-8 px-8 font-semibold;
 }
 
 .paragraph {
-  @apply text-Neutral-darkGrayishBlue text-center sm:text-left px-8;
+  @apply text-Neutral-darkGrayishBlue text-sm text-center sm:text-left px-8;
 }
 
 .footerList {
@@ -27,5 +27,38 @@
 
 .footerH {
   @apply font-semibold my-4;
+}
+
+@media (min-width: 640px) {
+  .partOne::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    z-index: -1;
+    background-image: url('/illustration-editor-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top 10% left 10%;
+    background-size: contain;
+  }
+  .partThree::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 50%;
+    z-index: -1;
+    background-image: url('/illustration-laptop-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top 10% right 10%;
+    background-size: contain;
+  }
+}
+
+.maxw {
+  @apply max-w-5xl m-auto;
 }
 @tailwind utilities;

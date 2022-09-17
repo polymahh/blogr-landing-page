@@ -4,21 +4,33 @@ import img1 from '../public/illustration-phones.svg';
 
 function PartTwo() {
   return (
-    <>
-      <div className="relative bg-Neutral-darkBlackBlue bg-[url('/bg-pattern-circles.svg')] bg-cover pb-16 rounded-bl-[80px] rounded-tr-[80px] flex flex-col mt-60 ">
-        <div className="-mt-60">
-          <Image src={img1} alt="image" />
+    <div
+      className="bg-Primary-dark bg-[url('/bg-pattern-circles.svg')] bg-[length:150%] bg-no-repeat pb-20 sm:pb-0 rounded-bl-[80px] 
+    rounded-tr-[80px] "
+    >
+      <div className=" bg-[right_-40px_top_-160px] grid sm:grid-cols-2 sm:mt-8 mt-12 maxw sm:pl-12 ">
+        <div className="-mt-56 sm:-mt-4 sm:-mb-4 sm:scale-125  ">
+          <Image
+            src={img1}
+            alt="image"
+            objectPosition="top right"
+            layout="responsive"
+            objectFit="contain"
+          />
         </div>
-        <h1 className="title text-white pt-0">
-          State of the Art Infrastructure
-        </h1>
-        <p className="paragraph text-white">
-          With reliability and speed in mind, worldwide for ultra-fast
-          connectivity. This ensures your site will load instantly, no matter
-          where your readers are, keeping your site competitive.
-        </p>
+
+        <div className="sm:py-20">
+          <h1 className="title text-white pt-4">
+            State of the Art Infrastructure
+          </h1>
+          <p className="paragraph text-neutral-400">
+            With reliability and speed in mind, worldwide for ultra-fast
+            connectivity. This ensures your site will load instantly, no matter
+            where your readers are, keeping your site competitive.
+          </p>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 export default PartTwo;

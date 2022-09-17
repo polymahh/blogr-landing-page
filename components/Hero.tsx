@@ -3,7 +3,7 @@ import React from 'react';
 function Hero() {
   return (
     <div className="py-10 px-4 text-center">
-      <h1 className="text-3xl py-6 ">
+      <h1 className="text-4xl py-6 ">
         A modern <br className="sm:hidden" /> publishing platform
       </h1>
       <p>Grow your audience and build your online brand</p>

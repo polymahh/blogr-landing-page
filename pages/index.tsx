@@ -17,7 +17,7 @@ export default function Home() {
       <header className="bg-Primary-light bg-[url('/bg-pattern-intro-mobile.svg')] sm:bg-[url('/bg-pattern-intro-desktop.svg')] bg-[length:250%] bg-center overflow-hidden relative rounded-bl-[80px] mb-8">
         <Header />
       </header>
-      <main>
+      <main className="overflow-clip">
         <PartOne />
         <PartTwo />
         <PartThree />

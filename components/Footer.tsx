@@ -3,7 +3,7 @@ import logo from '../public/logo.svg';
 
 function Footer() {
   return (
-    <div className="grid gap-4 p-8 justify-center">
+    <div className="grid gap-4 p-8 justify-center sm:grid-cols-4">
       <div className="my-8">
         <Image src={logo} alt="logo" />
       </div>
