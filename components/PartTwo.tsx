@@ -9,7 +9,7 @@ function PartTwo() {
     rounded-tr-[80px] "
     >
       <div className=" bg-[right_-40px_top_-160px] grid sm:grid-cols-2 sm:mt-8 mt-12 maxw sm:pl-12 ">
-        <div className="-mt-56 sm:-mt-4 sm:-mb-4 sm:scale-125  ">
+        <div className="-mt-56 sm:-mt-10 sm:-mb-20 sm:scale-100  ">
           <Image
             src={img1}
             alt="image"
