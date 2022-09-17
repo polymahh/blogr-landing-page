@@ -1,17 +1,16 @@
 import { useState } from 'react';
-import arrowLight from '../public/icon-arrow-light.svg';
+import arrowLight from '../public/icon-arrow-dark.svg';
 // import arrowDark from '../public/icon-arrow-dark.svg';
 import Image from 'next/image';
 
-function Headerlink({ link }) {
+function MobileLink({ link }) {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative mb-6 ">
       <button
         onClick={() => setClicked(!clicked)}
-        onBlur={() => setClicked(false)}
-        className="flex gap-1 items-center hover:cursor-pointer hover:underline font-ubuntu  "
+        className="flex gap-1 items-center m-auto  font-Overpass font-semibold text-Primary-dark "
       >
         {link}
         <span>
@@ -25,7 +24,7 @@ function Headerlink({ link }) {
         </span>
       </button>
       {clicked && (
-        <div className="flex flex-col gap-2 p-4 bg-white text-Neutral-darkBlackBlue text-sm font-Overpass rounded-md absolute -left-3 top-10 w-32">
+        <div className="flex flex-col gap-2 p-4 justify-center items-center bg-neutral-200 text-Neutral-darkGrayishBlue text-sm font-Overpass font-semibold rounded-md mx-auto ">
           <span className="cursor-pointer hover:font-semibold">Contact</span>
           <span className="cursor-pointer hover:font-semibold">Newsletter</span>
           <span className="cursor-pointer hover:font-semibold">LinkedIn</span>
@@ -34,4 +33,4 @@ function Headerlink({ link }) {
     </div>
   );
 }
-export default Headerlink;
+export default MobileLink;

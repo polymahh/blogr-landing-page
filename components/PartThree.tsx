@@ -4,9 +4,9 @@ import img1 from '../public/illustration-laptop-mobile.svg';
 
 function PartThree() {
   return (
-    <div className="partThree mt-20 mb-20 pt-4  sm:grid sm:grid-cols-2 items-center relative bg-opacity-0 maxw  ">
-      <div className="sm:hidden">
-        <Image src={img1} alt="image" />
+    <div className="partThree my-20 pt-4  sm:grid sm:grid-cols-2 items-center relative bg-opacity-0 maxw  ">
+      <div className="sm:hidden scale-125 pb-4">
+        <Image src={img1} alt="image" objectFit="cover" layout="responsive" />
       </div>
       <div className="row-span-2"></div>
       <div>
@@ -19,7 +19,7 @@ function PartThree() {
           architecture is clean and is relatively easy to learn.
         </p>
         <h1 className="title">Powerful tooling</h1>
-        <p className="paragraph">
+        <p className="paragraph sm:pb-24">
           Batteries included. We built a simple and straightforward CLI tool
           that makes customization and deployment a breeze, but capable of
           producing even the most complicated sites.
