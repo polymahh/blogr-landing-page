@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <header
         className=" bg-Primary-light bg-[url('/bg-pattern-intro-mobile.svg')] sm:bg-[url('/bg-pattern-intro-desktop.svg')]  
-                          bg-[left_37%_top_30%] sm:[left_37%_top_30%] relative rounded-bl-[80px] mb-8 "
+                          bg-[left_30%_top_50%] sm:[left_37%_top_30%] relative rounded-bl-[80px] mb-8 "
       >
         <Header />
       </header>
