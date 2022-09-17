@@ -5,7 +5,7 @@ import img1 from '../public/illustration-phones.svg';
 function PartTwo() {
   return (
     <div
-      className="bg-Primary-dark bg-[url('/bg-pattern-circles.svg')] bg-[length:150%] bg-no-repeat pb-20 sm:pb-0 rounded-bl-[80px] 
+      className="bg-Primary-dark bg-[url('/bg-pattern-circles.svg')] bg-[left_50%_top_90%] bg-no-repeat pb-20 sm:pb-0 rounded-bl-[80px] 
     rounded-tr-[80px] "
     >
       <div className=" bg-[right_-40px_top_-160px] grid sm:grid-cols-2 sm:mt-8 mt-12 maxw sm:pl-12 ">
